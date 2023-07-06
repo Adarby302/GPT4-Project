@@ -1,0 +1,4 @@
+# Your OpenAI API Key
+OPENAI_API_KEY = "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"
+# Your Google Cloud JSON Path
+GOOGLE_JSON_PATH = ""
