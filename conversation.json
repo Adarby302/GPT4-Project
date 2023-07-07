@@ -2,7 +2,11 @@
     "history": [
         {
             "role": "user",
-            "content": "Alex said How old am I"
+            "content": "Alex said How are you "
+        },
+        {
+            "role": "assistant",
+            "content": "I'm an AI language model, so I don't have emotions, but thank you for asking! How can I assist you today?"
         }
     ]
 }

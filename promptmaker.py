@@ -6,10 +6,16 @@ sys.stdout = open(sys.stdout.fileno(), mode='w', encoding='utf8', buffering=1)
 outputNum = 20
 
 
+def getIdentity(identityPath):
+    with open(identityPath, "r", encoding="utf-8") as f:
+        identityContext = f.read()
+    return {"role": "user", "content": identityContext}
+
 
 def getPrompt():
     total_len = 0
     prompt = []
+    prompt.append(getIdentity("/Users/alex/PycharmProjects/pythonProject2/identity.txt"))
     prompt.append({"role": "system", "content": f"Below is conversation history.\n"})
 
     with open("conversation.json", "r") as f:
